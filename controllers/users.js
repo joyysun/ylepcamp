@@ -33,7 +33,7 @@ module.exports.login=(req, res) => {
 
 module.exports.logout=(req, res, next)=>{
     req.logout(()=> {
-      if (err) { return next(err); }
+      //if (err) { return next(err); }
       res.redirect('/campgrounds');
     })
 }
